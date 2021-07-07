@@ -1,4 +1,5 @@
-import { createStore } from "redux";
+// not react
+// import { createStore } from "redux";
 /*
 const add = document.getElementById("add");
 const minus = document.getElementById("minus");
@@ -68,7 +69,7 @@ minus.addEventListener("click", handleMinus);
 // never mutate state
 // mutation -> 상태의 변경
 // but you have to return new state, new object
-
+/*
 const form = document.querySelector("form");
 const input = document.querySelector("input");
 const ul = document.querySelector("ul");
@@ -143,3 +144,10 @@ const onSubmit = e => {
 }
 
 form.addEventListener("submit", onSubmit);
+*/
+
+import React from "react";
+import ReactDom from "react-dom";
+import App from "./components/App";
+
+ReactDom.render(<App></App>, document.getElementById("root"));
