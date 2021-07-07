@@ -148,6 +148,13 @@ form.addEventListener("submit", onSubmit);
 
 import React from "react";
 import ReactDom from "react-dom";
+import { Provider } from "react-redux";
 import App from "./components/App";
+import store from "./store";
 
-ReactDom.render(<App></App>, document.getElementById("root"));
+ReactDom.render(
+  <Provider store={store}>
+    <App></App>
+  </Provider>, 
+  document.getElementById("root")
+  );
